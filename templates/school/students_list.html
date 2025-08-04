@@ -6,6 +6,7 @@
 <div class="row">
   <h1>Список учителей</h1>
   <ul>
+<<<<<<< HEAD
   {% for student in students %}
     <li>
       <strong>{{ student.name }}</strong> (Группа: {{ student.group }})
@@ -19,6 +20,10 @@
     </li>
   {% empty %}
     <li>Нет данных о студентах</li>
+=======
+  {% for teacher in student.teachers.all %}
+  <p>{{ teacher.name }}: {{ teacher.subject }}</p>
+>>>>>>> 3abc028f378e1e2ecdc92d24dde948ad75fd2bf0
   {% endfor %}
   </ul>
 </div>
